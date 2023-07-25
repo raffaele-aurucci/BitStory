@@ -26,7 +26,8 @@ public class MoveCharacter : MonoBehaviour
         movement.Normalize();
         
         transform.position += movement * speed * Time.deltaTime;
-        
+        //_rigidbodyPlayer.AddForce(movement * 1.0F);
+
         // setto i valori float a vertical e a horizontal per applicare l'animazione
         animator.SetFloat("vertical", vertical);
         animator.SetFloat("horizontal", horizontal);

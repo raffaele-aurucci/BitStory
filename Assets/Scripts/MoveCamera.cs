@@ -41,7 +41,7 @@ public class MoveCamera : MonoBehaviour
         _horizontalRotation += mouseX * sensitivity * Time.deltaTime;
 
         // limito l'angolo di rotazione verticale
-        _verticalRotation = Mathf.Clamp(_verticalRotation, -10F, 30F);
+        _verticalRotation = Mathf.Clamp(_verticalRotation, -2F, 30F);
         
         // applico la rotazione verticale alla camera lungo l'asse X
         transform.localRotation = Quaternion.Euler(_verticalRotation, 0F, 0F);

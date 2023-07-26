@@ -5,7 +5,11 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     private RaycastHit _raycastHit;
+    
+    // Cambiando questo valore è possibile specificare una rotazione iniziale del personaggio lungo l'asse Y
+    [SerializeField]
     private float _mouseX;
+    [SerializeField]
     private float _mouseY;
 
     [SerializeField]
@@ -40,18 +44,24 @@ public class CameraController : MonoBehaviour
 
         _mouseY = Mathf.Clamp(_mouseY, _minY, _maxY);
 
+        // ruoto il pivot, questa rotazione influenzerà anche la rotazione del personaggio
         _pivotPos.transform.rotation = Quaternion.Euler(_mouseY, _mouseX, 0F);
     }
 
     private void LateUpdate()
     {
+        // aggiorno la posizione del CameraController, questo farà in modo che la camera segua il personaggio, mantenendo
+        // quindi una distanza costante
         transform.position = _playerPos.position;
+        
+        // verifica la presenza di collisioni con la camera
         CameraCollision();
     }
 
     void CameraCollision()
     {
         Debug.DrawLine(_pivotPos.transform.position, _cameraPos.transform.position, Color.red);
+        
         // Linecast verifica se c'è una collisione lungo la linea che interccore tra il pivot e la camera
         // la collissione si verifica quando c'è un oggetto a cui è associato un collider lungo la linea
         if (Physics.Linecast(_pivotPos.transform.position, _cameraPos.transform.position, out _raycastHit))

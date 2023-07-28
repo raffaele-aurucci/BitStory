@@ -46,7 +46,7 @@ public class SwapCameraController : MonoBehaviour
         // - attivo il controller della camera del giocatore
         // - attivo lo script che gestisce il movimento del giocatore
         // - disabilito la Main Camera
-        if (Vector3.Distance(_cameraScene.transform.position, _cameraPlayer.transform.position) < 0.001F)
+        if (Vector3.Distance(_cameraScene.transform.position, _cameraPlayer.transform.position) < 0.01F)
         {
             CancelInvoke("SwapCamera");
             _cameraController.SetActive(true);

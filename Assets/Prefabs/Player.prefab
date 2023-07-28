@@ -418,7 +418,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _controller: {fileID: 4799349616985521549}
   _animator: {fileID: 9042598234292073513}
-  _playerSpeed: 0.8
+  _playerSpeed: 0.7
   _gravity: -9.81
   _pivot: {fileID: 0}
 --- !u!1 &4942202957158046209

@@ -1,26 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class SwapCameraController : MonoBehaviour
 {
     [SerializeField]
-    private GameObject _cameraScene;
+    private GameObject cameraScene;
     [SerializeField]
-    private GameObject _cameraPlayer;
+    private GameObject cameraPlayer;
     
     [SerializeField]
-    private GameObject _panel;
+    private GameObject startPanel;
     [SerializeField]
-    private GameObject _cameraController;
+    private GameObject cameraController;
 
     [SerializeField]
-    private GameObject _player;
+    private GameObject player;
         
     public void OnClickStartGame()
     {
         // disattivo il panel dove è presente il button
-        _panel.SetActive(false);
+        startPanel.SetActive(false);
 
         // invoco ripetutamente la funzione SwapCamera() 
         InvokeRepeating("SwapCamera", 0.2F, 0.005F*Time.deltaTime);
@@ -31,11 +32,11 @@ public class SwapCameraController : MonoBehaviour
     // la posizione e la rotazione della Main Camera rispetto alla poszione della Camera del giocatore
     public void SwapCamera()
     {
-        _cameraScene.transform.position = Vector3.Lerp(_cameraScene.transform.position, _cameraPlayer.transform.position,
+        cameraScene.transform.position = Vector3.Lerp(cameraScene.transform.position, cameraPlayer.transform.position,
             0.7F * Time.deltaTime);
 
-        _cameraScene.transform.rotation = Quaternion.Slerp(_cameraScene.transform.rotation,
-            _cameraPlayer.transform.rotation, 0.7F * Time.deltaTime);
+        cameraScene.transform.rotation = Quaternion.Slerp(cameraScene.transform.rotation,
+            cameraPlayer.transform.rotation, 0.7F * Time.deltaTime);
     }
 
     public void Update()
@@ -46,15 +47,13 @@ public class SwapCameraController : MonoBehaviour
         // - attivo il controller della camera del giocatore
         // - attivo lo script che gestisce il movimento del giocatore
         // - disabilito la Main Camera
-        if (Vector3.Distance(_cameraScene.transform.position, _cameraPlayer.transform.position) < 0.01F)
+        if (Vector3.Distance(cameraScene.transform.position, cameraPlayer.transform.position) < 0.01F)
         {
             CancelInvoke("SwapCamera");
-            _cameraController.SetActive(true);
-            _player.GetComponent<PlayerController>().enabled = true;
-            _cameraScene.SetActive(false);
+            cameraController.SetActive(true);
+            player.GetComponent<PlayerController>().enabled = true;
+            cameraScene.SetActive(false);
         }
         
-        // Debug.Log("cameraScene: " + cameraScene.transform.position);
-        // Debug.Log("cameraPlayer: " + cameraPlayer.transform.position);
     }
 }

@@ -480,7 +480,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: Ciao sono ada lovelace e bla bla vla sono qui per aituataritid fdkdkjdkdkjda 
+    kdkdfkd kfdkf dk kfd ffdl fdl
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a1e5d3d51fb30484299c10944cba04d5, type: 2}
   m_sharedMaterial: {fileID: -4833272151856784959, guid: a1e5d3d51fb30484299c10944cba04d5, type: 2}
@@ -507,8 +508,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -517,7 +518,7 @@ MonoBehaviour:
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 0
+  m_characterSpacing: 2
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -907,7 +908,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.19607843}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1160,8 +1161,11 @@ MonoBehaviour:
   playerAnimator: {fileID: 995409682}
   interactionRange: 0.4
   linesAda:
-  - Ciao
-  - Sono Ada
+  - 'Ada: Ciao sono Ada Lovelace, conosciuta anche come la prima programmatrice della
+    storia dell''informatica, sono lieta di conoscerti!'
+  - 'Ada: Come puoi vedere sei in questo piccolo mondo in cui puoi divertirti insieme
+    a me e a tanti altri personaggi importanti della storia dell''informatica ...'
+  - "Ada: Poco pi\xF9 avanti potresti incontrare altre persone"
   linesHorst:
   - Ciao
   - Sono Horst

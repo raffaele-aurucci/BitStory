@@ -21,12 +21,16 @@ public class StartDialogueController : MonoBehaviour
     private bool isInRange;
     private GameObject character; 
     
+    [Space(10)]
+    [Header("Here the lines of dialogue characters")]
     [SerializeField]
     private string[] linesAda;
     [SerializeField]
     private string[] linesHorst;
+    [SerializeField] 
+    private string[] linesDennis;
     
-    // aggiungere altri characters ...
+    // aggiungere eventualmente altri characters ...
     
     public static StartDialogueController current { get; private set; }
     
@@ -41,7 +45,7 @@ public class StartDialogueController : MonoBehaviour
         // Controlla se il giocatore è nell'area di interazione e preme il tasto desiderato
         if (isInRange && Input.GetKeyDown(KeyCode.E))
         {
-            StartDialogWithCharacter();
+            StartDialogueWithCharacter();
         }
         
         // Controlla se il personaggio con cui interagire è nell'area di interazione
@@ -66,7 +70,7 @@ public class StartDialogueController : MonoBehaviour
         }
     }
 
-    private void StartDialogWithCharacter()
+    private void StartDialogueWithCharacter()
     {
         // Attiva il pannello del dialogo e avvia il dialogo con il personaggio con cui si sta interagendo
         gameObject.GetComponent<PlayerController>().enabled = false;
@@ -86,8 +90,11 @@ public class StartDialogueController : MonoBehaviour
                 DialogueController.current.lines = linesHorst;
                 textName.text = "Horst Feistel";
                 break;
-            
-            // aggiungere altri case
+            case "Dennis":
+                DialogueController.current.lines = linesDennis;
+                textName.text = "Dennis Ritchie";
+                break;
+            // aggiungere eventualmente altri case
         }
 
         DialogueController.current.StartDialogue();

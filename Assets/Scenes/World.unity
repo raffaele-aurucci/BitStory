@@ -1082,7 +1082,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textDialogue: {fileID: 1065680399}
-  textSpeed: 0.05
+  textSpeed: 0.03
 --- !u!1 &1715797557
 GameObject:
   m_ObjectHideFlags: 0
@@ -1389,10 +1389,37 @@ MonoBehaviour:
   - In questo mondo puoi divertirti insieme a me e a tanti altri personaggi illustri
     della storia dell'informatica!
   - Potrai imparare e scoprire tante cose che forse ancora non sai... consideralo
-    come se fosse un viaggio nel passato!
+    come se fosse un viaggio educativo nel passato!
   linesHorst:
-  - Ciao
-  - Sono Horst
+  - "Ehil\xE0, mi chiamo Horst Feistel e sono un crittografo, molto lieto di conoscerti!
+    Come? Non sai cosa sia un crittografo?"
+  - Mi occupo di "crittografia" e ti basta sapere che studio tecniche per rendere
+    i messaggi incomprensibili a persone non autorizzate.
+  - "La crittografia \xE8 importante poich\xE8 aiuta a rendere i computer sicuri
+    da persone con cattive intenzioni."
+  - Immagina i computer come cassaforti che devono proteggere dati importanti, ad
+    esempio password o le tue informazioni personali.
+  - Non vorresti mai che qualche sconosciuto sappia quale sia il numero di carta
+    di credito dei tuoi genitori o parenti ... giusto?
+  - "Ho lavorato per l'IBM, la pi\xF9 antica azienda del settore informatico e ho
+    realizzato due algoritmi per nascondere i messaggi."
+  - "Il primo algoritmo prende il nome da me ed \xE8 detto cifrario di Feistel, l'altro
+    \xE8 chiamato DES, acronimo di Data Encription Standard."
+  - Questi algoritmi vengono anche detti "algoritmi di cifratura a chiave simmetrica".
+  - Supponi di voler mandare un messaggio segreto ad una tua amica di nome Alice,
+    utilizzando uno dei due algoritmi.
+  - "L'algoritmo che andrai ad usare divider\xE0 il messaggio cos\xEC com'\xE8 in
+    piccoli blocchi di parole di una certa lunghezza. "
+  - "Dopodich\xE8 prender\xE0 in input una chiave segreta, che solo tu e la persona
+    a cui vuoi mandare il messaggio devi conoscere."
+  - "Applicher\xE0 una serie di modifiche al blocco mediante alcune istruzioni e
+    utilizzando la chiave segreta."
+  - "Infine otterrai un blocco incomprensibile rispetto all'originale. L'unione di
+    tutti i blocchi sar\xE0 il messaggio segreto."
+  - "Quando avrai mandato il messaggio ad Alice, lei dovr\xE0 utilizzare il tuo stesso
+    algoritmo ma dovr\xE0 invertire l'ordine della chiave."
+  - "Spero di averti chiarito l'idea di ci\xF2 che ho realizzato durante il mio lavoro
+    e i miei studi e di non averti troppo confuso ;)"
 --- !u!1 &1892610338
 GameObject:
   m_ObjectHideFlags: 0

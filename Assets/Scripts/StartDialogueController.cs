@@ -19,6 +19,10 @@ public class StartDialogueController : MonoBehaviour
     
     // tiene traccia della presenza del player nell'area di interazione con i personaggi
     private bool isInRange;
+    
+    // verifica se è stato premuto il tasto per interagire con il personaggio
+    private bool isKeyPressed;
+    
     private GameObject character; 
     
     [Space(10)]
@@ -29,8 +33,16 @@ public class StartDialogueController : MonoBehaviour
     private string[] linesHorst;
     [SerializeField] 
     private string[] linesDennis;
-    
-    // aggiungere eventualmente altri characters ...
+    [SerializeField] 
+    private string[] linesAlan;
+    [SerializeField] 
+    private string[] linesTim;
+    [SerializeField] 
+    private string[] linesGeorge;
+    [SerializeField] 
+    private string[] linesClaude;
+    [SerializeField]
+    private string[] linesJohn;
     
     public static StartDialogueController current { get; private set; }
     
@@ -42,9 +54,10 @@ public class StartDialogueController : MonoBehaviour
 
     private void Update()
     {
-        // Controlla se il giocatore è nell'area di interazione e preme il tasto desiderato
-        if (isInRange && Input.GetKeyDown(KeyCode.E))
+        // Controlla se il giocatore è nell'area di interazione e preme il tasto E
+        if (isInRange && Input.GetKeyDown(KeyCode.E) && !isKeyPressed)
         {
+            isKeyPressed = true;
             StartDialogueWithCharacter();
         }
         
@@ -77,34 +90,60 @@ public class StartDialogueController : MonoBehaviour
         cameraController.GetComponent<CameraController>().enabled = false;
         playerAnimator.SetFloat("horizontal", 0);
         playerAnimator.SetFloat("vertical", 0);
-        
-        dialoguePanel.SetActive(true);
 
         switch (character.tag)
         {
             case "Ada":
-                DialogueController.current.lines = linesAda;
-                textName.text = "Ada Lovelace";
+                AssignLinesDialogue(linesAda, "Ada Lovelace");
                 break;
             case "Horst":
-                DialogueController.current.lines = linesHorst;
-                textName.text = "Horst Feistel";
+                AssignLinesDialogue(linesHorst, "Horst Feistel");
                 break;
             case "Dennis":
-                DialogueController.current.lines = linesDennis;
-                textName.text = "Dennis Ritchie";
+                AssignLinesDialogue(linesDennis, "Dennis Ritchie");
                 break;
-            // aggiungere eventualmente altri case
+            case "Alan":
+                AssignLinesDialogue(linesAlan, "Alan Turing");
+                break;
+            case "Tim":
+                AssignLinesDialogue(linesTim, "Tim Berners-Lee");
+                break;
+            case "George":
+                AssignLinesDialogue(linesGeorge, "George Boole");
+                break;
+            case "Claude":
+                AssignLinesDialogue(linesClaude, "Claude Shannon");
+                break;
+            case "John":
+                AssignLinesDialogue(linesJohn, "John McCarthy");
+                break;
         }
 
-        DialogueController.current.StartDialogue();
     }
 
+    void AssignLinesDialogue(string[] linesCharacter, string textNameCharacter)
+    {
+        if (linesCharacter != null && linesCharacter.Length > 0)
+        {
+            dialoguePanel.SetActive(true);
+            DialogueController.current.lines = linesCharacter;
+            textName.text = textNameCharacter;
+            DialogueController.current.StartDialogue();
+        }
+        else
+        {
+            EnablePlayerMovementAndDisablePanel();
+        }
+    }
+    
     public void EnablePlayerMovementAndDisablePanel()
     {
         gameObject.GetComponent<PlayerController>().enabled = true;
         cameraController.GetComponent<CameraController>().enabled = true;
         
-        dialoguePanel.SetActive(false);
+        if (dialoguePanel.activeSelf)
+            dialoguePanel.SetActive(false);
+
+        isKeyPressed = false;
     }
 }

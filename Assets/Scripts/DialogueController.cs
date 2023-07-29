@@ -22,7 +22,7 @@ public class DialogueController : MonoBehaviour
     // velocizza il dialogo quando clicco il pulsante sx del mouse, oppure passa alla linea di dialogo successiva
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && lines != null && lines.Length > 0)
         {
             if (textDialogue.text == lines[index])
             {
@@ -38,9 +38,12 @@ public class DialogueController : MonoBehaviour
 
     public void StartDialogue()
     {
-        index = 0;
-        textDialogue.text = string.Empty;
-        StartCoroutine(WriteLine());
+        if (lines != null && lines.Length > 0)
+        {
+            index = 0;
+            textDialogue.text = string.Empty;
+            StartCoroutine(WriteLine());
+        }
     }
 
     IEnumerator WriteLine()

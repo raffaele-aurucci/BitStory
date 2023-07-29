@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -13,6 +14,8 @@ public class StartDialogueController : MonoBehaviour
     private Animator playerAnimator;
     [SerializeField] 
     private float interactionRange;
+    [SerializeField]
+    private TextMeshProUGUI textName;
     
     // tiene traccia della presenza del player nell'area di interazione con i personaggi
     private bool isInRange;
@@ -77,9 +80,11 @@ public class StartDialogueController : MonoBehaviour
         {
             case "Ada":
                 DialogueController.current.lines = linesAda;
+                textName.text = "Ada Lovelace";
                 break;
             case "Horst":
                 DialogueController.current.lines = linesHorst;
+                textName.text = "Horst Feistel";
                 break;
             
             // aggiungere altri case

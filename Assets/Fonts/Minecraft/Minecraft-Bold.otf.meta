@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0bd64852a39dde24aab0869a2787987d
+guid: 3dd3835f1e6ee524e831158649f1224a
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -12,6 +12,10 @@ TrueTypeFontImporter:
   - Minecraft
   fallbackFontReferences:
   - {fileID: 12800000, guid: 51501a320cf0d864fbaf22092d6ca628, type: 3}
+  - {fileID: 12800000, guid: 0bd64852a39dde24aab0869a2787987d, type: 3}
+  - {fileID: 12800000, guid: c051b67ca6008aa46aaeaa3d1f5aa32b, type: 3}
+  - {fileID: 12800000, guid: 4f23880b5e105cb48956b0722b8d9e45, type: 3}
+  - {fileID: 12800000, guid: 0d165c0e918e30341a459425ea7df7da, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1

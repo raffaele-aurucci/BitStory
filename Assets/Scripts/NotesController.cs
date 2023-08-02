@@ -157,7 +157,7 @@ public class NotesController : MonoBehaviour
                 WriteNote(linesMalware, "MALWARE");
                 break;
             case "C":
-                WriteNote(linesC, "C");
+                WriteNote(linesC, "IL LINGUAGGIO C");
                 break;
             case "Dos":
                 WriteNote(linesDos, "DOS");

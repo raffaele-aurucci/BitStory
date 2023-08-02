@@ -1079,7 +1079,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0012817383, y: 1.3581848}
+  m_AnchoredPosition: {x: 0.0012817383, y: 0.000030517578}
   m_SizeDelta: {x: -921.36, y: -19.016}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &200137387
@@ -1352,8 +1352,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 111.16, y: -0.00019151}
-  m_SizeDelta: {x: 222.33, y: 51.284}
+  m_AnchoredPosition: {x: 119.44, y: -0.00019151}
+  m_SizeDelta: {x: 250, y: 51.284}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &556726539
 MonoBehaviour:
@@ -1384,8 +1384,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4293918463
+  m_fontColor: {r: 1, g: 0.99607843, b: 0.9372549, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1408,7 +1408,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 4
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -1519,8 +1519,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4293918463
+  m_fontColor: {r: 1, g: 0.99607843, b: 0.9372549, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1543,7 +1543,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 4
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -1719,8 +1719,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -111.16, y: -0.00019151}
-  m_SizeDelta: {x: 222.33, y: 51.284}
+  m_AnchoredPosition: {x: -119.44, y: -0.00019151}
+  m_SizeDelta: {x: 250, y: 51.284}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &972885972
 MonoBehaviour:
@@ -1751,8 +1751,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4293918463
+  m_fontColor: {r: 1, g: 0.99607843, b: 0.9372549, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1775,7 +1775,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -2810,6 +2810,7 @@ MonoBehaviour:
   textNotes: {fileID: 972885972}
   textTasks: {fileID: 556726539}
   textMedals: {fileID: 626253344}
+  controlInfoPanel: {fileID: 0}
 --- !u!1 &1357128120
 GameObject:
   m_ObjectHideFlags: 0
@@ -3935,8 +3936,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4293918463
+  m_fontColor: {r: 1, g: 0.99607843, b: 0.9372549, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3959,7 +3960,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -4253,16 +4254,34 @@ MonoBehaviour:
   textNote: {fileID: 1862372422}
   linesAlgorithm: "Un algoritmo \xE8 una sequenza di istruzioni eseguite da un computer.
     In pratica se gli viene fornito un input valido lui restituir\xE0 un risultato
-    sulla base di quell'input! "
-  linesSoftware: Il software ...
-  linesHardware: L'hardware ...
-  linesOS: Un sistema operativo ...
-  linesMalware: Un malware ...
-  linesC: 'Esempio di programma in C:'
-  linesDos: Il dos ...
-  linesBit: Il bit ...
-  linesQwerty: La sigla QWERTY ...
-  linesIA: L'IA ...
+    sulla base di quest'ultimo!"
+  linesSoftware: "Il software \xE8 ci\xF2 che realizzano gli informatici, ovvero
+    un'insieme di istruzioni realizzate al fine di far eseguire specifiche attivit\xE0
+    al computer!"
+  linesHardware: "L'hardware \xE8 la parte fisica di un computer, ovvero tutto ci\xF2
+    che \xE8 possibile toccare, come il mouse, la tastiera, il monitor, la memoria,
+    il processore, i circuiti elettronci, etc."
+  linesOS: "Un sistema operativo \xE8 un software essenziale in ogni computer. Permette
+    di gestire le risorse hardware, coordinare i programmi e permette di interfacciare
+    l'utente con il computer!"
+  linesMalware: "Un malware \xE8 un software dannoso progettato per arrecare danni
+    a un computer o altri dispositivi, rubare informazioni e compromettere la sicurezza
+    all'insaputa dell'utente."
+  linesC: "Il C \xE8 un linguaggio di programmazione utilizzato  per realizzare i
+    sistemi operativi, come Windows, Linux, etc. Non solo, \xE8 molto divertente
+    anche da imparare e spesso utilizzato per insegnare a programmare agli studenti!"
+  linesDos: "Il DOS, acronimo di Disk Operating System \xE8 una famiglia di sistemi
+    operativi a riga di comando, ovvero senza interfaccia grafica, sviluppato tra
+    gli anni '80 e '90. Il p\xF9 diffuso fu MS-DOS, seguito da PC-DOS."
+  linesBit: "Il bit \xE8 \xE8 l'unit\xE0 di base dell'informazione in informatica
+    e rappresenta un valore binario, che pu\xF2 essere 0 o 1. I bit vengono utilizzati
+    per rappresentare dati, istruzioni e immagini nei computer."
+  linesQwerty: La sigla QWERTY indica un layout (schema) di tastiera molto utilizzato
+    nelle tastiere per computer o macchine da scrivere e prende il nome dalle prime
+    sei lettere della fila superiore della tastiera!
+  linesIA: "L'AI (Artificial Intelligence) \xE8 un campo dell'informatica che si
+    occupa dello sviluppo di algoritmi per consentire al computer di svolgere alcune
+    attivit\xE0 simili al cervello umano, come ragionare, apprendere o prendere decisioni."
 --- !u!1 &1862372420
 GameObject:
   m_ObjectHideFlags: 0

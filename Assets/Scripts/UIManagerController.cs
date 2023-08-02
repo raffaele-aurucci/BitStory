@@ -8,20 +8,23 @@ public class UIManagerController : MonoBehaviour
 {
     [Header("The text that sign the bits (points)")]
     [SerializeField] 
-    public TextMeshProUGUI textPoints;
+    private TextMeshProUGUI textPoints;
 
     [Header("The text that signes the collected notes")]
     [SerializeField] 
-    public TextMeshProUGUI textNotes;
+    private TextMeshProUGUI textNotes;
     
     [Header("The text that signes the number of complete task")]
     [SerializeField] 
-    public TextMeshProUGUI textTasks;
+    private TextMeshProUGUI textTasks;
     
     [Header("The text that signes the medals obtained")]
     [SerializeField] 
-    public TextMeshProUGUI textMedals;
-    
+    private TextMeshProUGUI textMedals;
+
+    [Header("The control info panel in game menu")]
+    [SerializeField]
+    private GameObject controlInfoPanel;
     
     // Start is called before the first frame update
     void Start()
@@ -65,7 +68,28 @@ public class UIManagerController : MonoBehaviour
 
     public void DeleteData()
     {
-        PlayerPrefs.DeleteAll();
-        SceneManager.LoadScene("Menu");
+        if (SceneManager.GetActiveScene().name == "Menu")
+        {
+            PlayerPrefs.DeleteAll();
+            SceneManager.LoadScene("Menu");
+        }
+    }
+
+    public void ControlInfoPanelAppear()
+    {
+        if (SceneManager.GetActiveScene().name == "Menu")
+        {
+            if (!controlInfoPanel.activeSelf)   
+                controlInfoPanel.SetActive(true);
+        }
+    }
+
+    public void ControlInfoPanelDisappear()
+    {
+        if (SceneManager.GetActiveScene().name == "Menu")
+        {
+            if (controlInfoPanel.activeSelf)   
+                controlInfoPanel.SetActive(false);
+        }
     }
 }

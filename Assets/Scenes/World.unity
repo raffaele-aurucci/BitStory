@@ -206,7 +206,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4171501}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1349177200}
+        m_TargetAssemblyTypeName: ChangeSceneController, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &4171501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1113,6 +1125,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1349177199}
   - component: {fileID: 1349177198}
+  - component: {fileID: 1349177200}
   m_Layer: 0
   m_Name: UIManager
   m_TagString: Untagged
@@ -1152,6 +1165,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1349177200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1349177197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f471b31fa7b1fd6439bf5906774a4012, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1357128120
 GameObject:
   m_ObjectHideFlags: 0
@@ -1416,8 +1441,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textDialogue: {fileID: 1065680399}
-  textSpeed: 0.03
   buttonPanel: {fileID: 29264887}
+  textSpeed: 0.03
 --- !u!1 &1598967219
 GameObject:
   m_ObjectHideFlags: 0
@@ -1839,10 +1864,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f7799a9973d9ee48a120953f5b1b4d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialoguePanel: {fileID: 1563282304}
   cameraController: {fileID: 1947192875}
   playerAnimator: {fileID: 995409682}
   interactionRange: 0.4
+  dialoguePanel: {fileID: 1563282304}
   textName: {fileID: 988770365}
   buttonPanel: {fileID: 29264887}
   linesAda:

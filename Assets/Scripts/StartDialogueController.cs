@@ -144,7 +144,8 @@ public class StartDialogueController : MonoBehaviour
             DialogueController.current.tagCharacter = character.tag;
             textName.text = textNameCharacter;
             DialogueController.current.StartDialogue();
-            // impostare il tag anche per il cambio scena
+            // tag del personaggio in caso si voglia accedere al corrispettivo minigame
+            ChangeSceneController.current.tagCharacter = character.tag;
         }
         else
         {

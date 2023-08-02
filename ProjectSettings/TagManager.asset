@@ -12,6 +12,16 @@ TagManager:
   - George
   - Claude
   - John
+  - Algorithm
+  - Hardware
+  - Software
+  - OS
+  - Malware
+  - C
+  - Dos
+  - Bit
+  - Qwerty
+  - IA
   layers:
   - Default
   - TransparentFX
@@ -19,7 +29,7 @@ TagManager:
   - Characters
   - Water
   - UI
-  - 
+  - Notes
   - 
   - 
   - 

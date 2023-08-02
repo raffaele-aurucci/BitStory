@@ -12,17 +12,22 @@ public class SwapCameraController : MonoBehaviour
     
     [SerializeField]
     private GameObject startPanel;
+    
     [SerializeField]
     private GameObject cameraController;
 
     [SerializeField]
     private GameObject player;
-        
+
+    [SerializeField] 
+    private GameObject logo;
+    
     public void OnClickStartGame()
     {
         // disattivo il panel dove è presente il button
         startPanel.SetActive(false);
-
+        logo.SetActive(false);
+        
         // invoco ripetutamente la funzione SwapCamera() 
         InvokeRepeating("SwapCamera", 0.2F, 0.005F*Time.deltaTime);
 

@@ -2189,7 +2189,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!20 &1032290945
 Camera:
   m_ObjectHideFlags: 0
@@ -2669,7 +2669,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1258156027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4802,7 +4802,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1947192876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5315,7 +5315,7 @@ PrefabInstance:
       objectReference: {fileID: 995409682}
     - target: {fileID: 4799349616985521546, guid: bb9b113cf9a6a17489983d854fcd0c71, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4799349616985521546, guid: bb9b113cf9a6a17489983d854fcd0c71, type: 3}
       propertyPath: controller
@@ -5367,6 +5367,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4799349616985521547, guid: bb9b113cf9a6a17489983d854fcd0c71, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9042598234292073513, guid: bb9b113cf9a6a17489983d854fcd0c71, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

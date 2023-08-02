@@ -37,7 +37,7 @@ public class UIManagerController : MonoBehaviour
 
     void CountProgressElement()
     {
-        if (SceneManager.GetActiveScene().name == "World")
+        if (SceneManager.GetActiveScene().name == "World" || SceneManager.GetActiveScene().name == "Menu")
         {
             if (PlayerPrefs.HasKey("points"))
             {

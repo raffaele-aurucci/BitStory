@@ -50,9 +50,14 @@ public class SwapCameraController : MonoBehaviour
         if (Vector3.Distance(cameraScene.transform.position, cameraPlayer.transform.position) < 0.01F)
         {
             CancelInvoke("SwapCamera");
-            cameraController.SetActive(true);
-            player.GetComponent<PlayerController>().enabled = true;
-            cameraScene.SetActive(false);
+            // cameraController.SetActive(true);
+            // player.GetComponent<PlayerController>().enabled = true;
+            // cameraScene.SetActive(false);
+            ChangeSceneController.current.LoadScene();
+        } //necessario per non far avvertire lo stacco di animazione durante il cambio scena
+        else if (Vector3.Distance(cameraScene.transform.position, cameraPlayer.transform.position) < 10F)
+        {
+            player.GetComponentInChildren<Animator>().enabled = true;
         }
         
     }

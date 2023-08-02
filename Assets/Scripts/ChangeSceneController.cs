@@ -19,7 +19,8 @@ public class ChangeSceneController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // aggiungere funzione per il caricamento dei collezionabili all'interno di World
+        // funzione per il caricamento delle note raccolte/non raccolte all'interno di World
+        LoadNotesInWorld();
     }
 
     // Update is called once per frame
@@ -59,6 +60,42 @@ public class ChangeSceneController : MonoBehaviour
         {
             PlayerPrefs.Save();
             SceneManager.LoadScene("World");
+        }
+    }
+
+    void LoadNotesInWorld()
+    {
+        if (SceneManager.GetActiveScene().name == "World")
+        {
+            if(PlayerPrefs.HasKey("Algorithm") && PlayerPrefs.GetInt("Algorithm") == 0)
+                Destroy(GameObject.FindWithTag("Algorithm"));
+            
+            if(PlayerPrefs.HasKey("Hardware") && PlayerPrefs.GetInt("Hardware") == 0)
+                Destroy(GameObject.FindWithTag("Hardware"));
+            
+            if(PlayerPrefs.HasKey("Software") && PlayerPrefs.GetInt("Software") == 0)
+                Destroy(GameObject.FindWithTag("Software"));
+            
+            if(PlayerPrefs.HasKey("Malware") && PlayerPrefs.GetInt("Malware") == 0)
+                Destroy(GameObject.FindWithTag("Malware"));
+            
+            if(PlayerPrefs.HasKey("OS") && PlayerPrefs.GetInt("OS") == 0)
+                Destroy(GameObject.FindWithTag("OS"));
+            
+            if(PlayerPrefs.HasKey("C") && PlayerPrefs.GetInt("C") == 0)
+                Destroy(GameObject.FindWithTag("C"));
+            
+            if(PlayerPrefs.HasKey("Dos") && PlayerPrefs.GetInt("Dos") == 0)
+                Destroy(GameObject.FindWithTag("Dos"));
+            
+            if(PlayerPrefs.HasKey("IA") && PlayerPrefs.GetInt("IA") == 0)
+                Destroy(GameObject.FindWithTag("IA"));
+            
+            if(PlayerPrefs.HasKey("Bit") && PlayerPrefs.GetInt("Bit") == 0)
+                Destroy(GameObject.FindWithTag("Bit"));
+            
+            if(PlayerPrefs.HasKey("Qwerty") && PlayerPrefs.GetInt("Qwerty") == 0)
+                Destroy(GameObject.FindWithTag("Qwerty"));
         }
     }
 }

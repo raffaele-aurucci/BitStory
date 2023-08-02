@@ -65,7 +65,7 @@ public class ChangeSceneController : MonoBehaviour
 
     void LoadNotesInWorld()
     {
-        if (SceneManager.GetActiveScene().name == "World")
+        if (SceneManager.GetActiveScene().name == "World" || SceneManager.GetActiveScene().name == "Menu")
         {
             if(PlayerPrefs.HasKey("Algorithm") && PlayerPrefs.GetInt("Algorithm") == 0)
                 Destroy(GameObject.FindWithTag("Algorithm"));

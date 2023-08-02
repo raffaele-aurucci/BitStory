@@ -145,7 +145,6 @@ public class NotesController : MonoBehaviour
                 WriteNote(linesAlgorithm, "ALGORITMO");
                 break;
             case "Hardware":
-                Debug.Log("hardware");
                 WriteNote(linesHardware, "HARDWARE");
                 break;
             case "Software":

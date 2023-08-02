@@ -66,5 +66,6 @@ public class UIManagerController : MonoBehaviour
     public void DeleteData()
     {
         PlayerPrefs.DeleteAll();
+        SceneManager.LoadScene("Menu");
     }
 }

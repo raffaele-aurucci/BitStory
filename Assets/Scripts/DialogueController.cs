@@ -4,36 +4,59 @@ using UnityEngine;
 
 public class DialogueController : MonoBehaviour
 {
+    #region fields
+    
+    [Header("Text TMP when the lines of dialogues appear")]
     [SerializeField]
     private TextMeshProUGUI textDialogue;
+    
+    [Header("Button panel for change scene")]
+    [SerializeField] 
+    private GameObject buttonPanel;
+     
+    [Header("Velocity of text, low is better")]
     [SerializeField]
     private float textSpeed;
-
+    
     private int index;
     public string[] lines { get; set; }
     public static DialogueController current { get; private set; }
-
+    
+    // Necessario per attivare il buttonPanel al termine del dialogo con determinati personaggi
+    public string tagCharacter { get; set; }
+    
+    #endregion
+    
     void Awake()
     {
         if (current == null)
             current = this;
     }
     
-    // velocizza il dialogo quando clicco il pulsante sx del mouse, oppure passa alla linea di dialogo successiva
+    // velocizza il dialogo quando clicco il pulsante E della tastiera, oppure passa alla linea di dialogo successiva
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && lines != null && lines.Length > 0)
+        if (lines != null && lines.Length > 0)
         {
-            if (textDialogue.text == lines[index])
+            if (Input.GetKeyDown(KeyCode.E))
             {
-                NextLine();
-            }
-            else
-            {
-                StopAllCoroutines();
-                textDialogue.text = lines[index];
-            }
+                if (textDialogue.text == lines[index])
+                {
+                    // necessario per non far scomparire il dialogPanel all'utlima battuta di dialogo, in modo da far apparire
+                    // il pannello per scegliere se iniziare o meno il minigioco (al momento solo per Ada)
+                    if (!(tagCharacter == "Ada" && index == lines.Length - 1))
+                        NextLine();
+                }
+                else
+                {
+                    StopAllCoroutines();
+                    textDialogue.text = lines[index];
+                }
+            } // attiva il buttonPanel per Ada
+            else if (index == lines.Length - 1 && textDialogue.text == lines[index] && tagCharacter == "Ada")
+                buttonPanel.SetActive(true);
         }
+        
     }
 
     public void StartDialogue()

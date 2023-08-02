@@ -6,16 +6,28 @@ using UnityEngine.Serialization;
 
 public class StartDialogueController : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject dialoguePanel;
+    #region fields
+    
     [SerializeField]
     private GameObject cameraController;
+        
     [SerializeField]
     private Animator playerAnimator;
+    
     [SerializeField] 
     private float interactionRange;
+    
+    [Header("Dialgoue panel for the lines of dialogue")]
+    [SerializeField]
+    private GameObject dialoguePanel;
+    
+    [Header("Name of character in dialogue")]
     [SerializeField]
     private TextMeshProUGUI textName;
+    
+    [Header("Button panel for change scene")]
+    [SerializeField] 
+    private GameObject buttonPanel;
     
     // tiene traccia della presenza del player nell'area di interazione con i personaggi
     private bool isInRange;
@@ -45,6 +57,8 @@ public class StartDialogueController : MonoBehaviour
     private string[] linesJohn;
     
     public static StartDialogueController current { get; private set; }
+    
+    #endregion
     
     private void Awake()
     {
@@ -127,8 +141,10 @@ public class StartDialogueController : MonoBehaviour
         {
             dialoguePanel.SetActive(true);
             DialogueController.current.lines = linesCharacter;
+            DialogueController.current.tagCharacter = character.tag;
             textName.text = textNameCharacter;
             DialogueController.current.StartDialogue();
+            // impostare il tag anche per il cambio scena
         }
         else
         {
@@ -143,6 +159,9 @@ public class StartDialogueController : MonoBehaviour
         
         if (dialoguePanel.activeSelf)
             dialoguePanel.SetActive(false);
+        
+        if (buttonPanel.activeSelf)
+            buttonPanel.SetActive(false);
 
         isKeyPressed = false;
     }

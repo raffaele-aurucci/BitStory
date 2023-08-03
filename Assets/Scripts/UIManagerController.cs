@@ -14,9 +14,9 @@ public class UIManagerController : MonoBehaviour
     [SerializeField] 
     private TextMeshProUGUI textNotes;
     
-    [Header("The text that signes the number of complete task")]
-    [SerializeField] 
-    private TextMeshProUGUI textTasks;
+    // [Header("The text that signes the number of complete task")]
+    // [SerializeField] 
+    // private TextMeshProUGUI textTasks;
     
     [Header("The text that signes the medals obtained")]
     [SerializeField] 

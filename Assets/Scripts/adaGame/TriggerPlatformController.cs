@@ -1,25 +1,25 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class TriggerPlatformController : MonoBehaviour
+namespace AdaGame
 {
-    private void OnTriggerEnter(Collider other)
+    public class TriggerPlatformController : MonoBehaviour
     {
-        GameObject gameObject = other.gameObject;
-
-        if (gameObject.CompareTag("Sphere"))
+        private void OnTriggerEnter(Collider other)
         {
-            GameObject parent = transform.parent.gameObject;
-            Invoke("IncrementSteps", 0.8F);
-            Destroy(parent, 0.8F);
-            
-        }
-    }
+            GameObject gameObject = other.gameObject;
 
-    private void IncrementSteps()
-    {
-        AdaGameUIManager.current.steps += 1;
+            if (gameObject.CompareTag("Sphere"))
+            {
+                GameObject parent = transform.parent.gameObject;
+                Invoke("IncrementSteps", 0.8F);
+                Destroy(parent, 0.8F);
+            
+            }
+        }
+
+        private void IncrementSteps()
+        {
+            UIManagerController.current.steps += 1;
+        }
     }
 }

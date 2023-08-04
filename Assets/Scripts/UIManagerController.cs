@@ -13,11 +13,7 @@ public class UIManagerController : MonoBehaviour
     [Header("The text that signes the collected notes")]
     [SerializeField] 
     private TextMeshProUGUI textNotes;
-    
-    // [Header("The text that signes the number of complete task")]
-    // [SerializeField] 
-    // private TextMeshProUGUI textTasks;
-    
+
     [Header("The text that signes the medals obtained")]
     [SerializeField] 
     private TextMeshProUGUI textMedals;
@@ -29,7 +25,8 @@ public class UIManagerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (!PlayerPrefs.HasKey("medalsWorld"))
+            PlayerPrefs.SetInt("medalsWorld", 0);
     }
 
     // Update is called once per frame
@@ -61,8 +58,16 @@ public class UIManagerController : MonoBehaviour
             {
                 textNotes.text = "Notes: 0/10";    
             }
-            
-            // aggiungere altri controlli per gli altri elementi
+
+            if (PlayerPrefs.HasKey("medalsWorld"))
+            {
+                int medals = PlayerPrefs.GetInt("medalsWorld");
+                textMedals.text = "Medals: " + medals + "/8";
+            }
+            else
+            {
+                textMedals.text = "Medals: 0/8";    
+            }
         }
     }
 

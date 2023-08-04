@@ -166,21 +166,24 @@ namespace AdaGame
                     finishPanel.SetActive(true);
 
                 if (steps == minSteps && PlayerPrefs.HasKey("medal") && PlayerPrefs.GetInt("medal") == 0
-                    && PlayerPrefs.HasKey("highScore")) 
+                    && PlayerPrefs.HasKey("highScore"))
                 {
                     PlayerPrefs.SetInt("medal", 1);
                     PlayerPrefs.SetInt("highScore", steps);
                     textFinish.text = linesWinWithMedal;
-                    
+
                     if (medalEmpthy.activeSelf)
                         medalEmpthy.SetActive(false);
-                    
+
                     medalColored.SetActive(true);
                     highScoreText.text = "High Score: " + PlayerPrefs.GetInt("highScore");
-                }
 
+                    if (PlayerPrefs.HasKey("medalsWorld"))
+                        PlayerPrefs.SetInt("medalsWorld", PlayerPrefs.GetInt("medalsWorld")+1);
+                    
+                }
                 else if (steps == minSteps && PlayerPrefs.HasKey("medal") && PlayerPrefs.GetInt("medal") == 1
-                    && PlayerPrefs.HasKey("highScore"))
+                         && PlayerPrefs.HasKey("highScore"))
                 {
                     textFinish.text = linesWinWithMedalObtained;
                     highScoreText.text = "High Score: " + PlayerPrefs.GetInt("highScore");

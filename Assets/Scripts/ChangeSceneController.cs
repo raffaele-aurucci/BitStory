@@ -59,6 +59,7 @@ public class ChangeSceneController : MonoBehaviour
         else if (SceneManager.GetActiveScene().name == "AdaGame")
         {
             PlayerPrefs.Save();
+            Time.timeScale = 1;
             SceneManager.LoadScene("World");
         }
     }

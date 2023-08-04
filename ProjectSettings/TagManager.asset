@@ -22,6 +22,7 @@ TagManager:
   - Bit
   - Qwerty
   - IA
+  - Sphere
   layers:
   - Default
   - TransparentFX
@@ -30,7 +31,7 @@ TagManager:
   - Water
   - UI
   - Notes
-  - 
+  - Platforms
   - 
   - 
   - 

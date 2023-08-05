@@ -55,7 +55,7 @@ namespace AdaGame
             {
                 rb.constraints = RigidbodyConstraints.None;
                 // fa apparire il gameOver quando la pallina cade nel vuoto
-                UIManagerController.current.GameOverPanelAppearNextFallSphere();
+                GameMangerController.current.GameOverNextFallSphere();
             }
         }
     }

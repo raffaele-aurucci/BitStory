@@ -14,7 +14,7 @@ namespace AdaGame
         
         void InvokeFinishGame()
          {
-             UIManagerController.current.FinishGame();    
+             GameMangerController.current.FinishGame();
          }
     }
 

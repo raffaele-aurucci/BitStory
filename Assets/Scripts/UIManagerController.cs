@@ -27,6 +27,12 @@ public class UIManagerController : MonoBehaviour
     {
         if (!PlayerPrefs.HasKey("medalsWorld"))
             PlayerPrefs.SetInt("medalsWorld", 0);
+        
+        if (!PlayerPrefs.HasKey("points"))
+            PlayerPrefs.SetInt("points", 0);
+        
+        if (!PlayerPrefs.HasKey("notes"))
+            PlayerPrefs.SetInt("notes", 0);
     }
 
     // Update is called once per frame

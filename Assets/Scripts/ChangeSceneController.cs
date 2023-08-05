@@ -50,7 +50,8 @@ public class ChangeSceneController : MonoBehaviour
             {
                 PlayerPrefs.Save();
                 AudioManager.current.PlayButtonSound();
-                AudioManager.current.PauseMusic();
+                AudioManager.current.PauseMainMusic();
+                AudioManager.current.PlayMusicAdaGame();
                 SceneManager.LoadScene("AdaGame");
             }
         }
@@ -62,7 +63,9 @@ public class ChangeSceneController : MonoBehaviour
         {
             PlayerPrefs.Save();
             Time.timeScale = 1;
-            AudioManager.current.ResumeMusic();
+            AudioManager.current.PlayButtonSound();
+            AudioManager.current.StopMusicAdaGame();
+            AudioManager.current.ResumeMainMusic();
             SceneManager.LoadScene("World");
         }
     }

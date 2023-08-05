@@ -47,15 +47,9 @@ public class SwapCameraController : MonoBehaviour
         // verifico ad ogni frame se la distanza tra la Main Camera e la camera del giocatore ha raggiunto una certa
         // soglia, in tal caso:
         // - non invoco più SwapCamera()
-        // - attivo il controller della camera del giocatore
-        // - attivo lo script che gestisce il movimento del giocatore
-        // - disabilito la Main Camera
         if (Vector3.Distance(cameraScene.transform.position, cameraPlayer.transform.position) < 0.01F)
         {
             CancelInvoke("SwapCamera");
-            // cameraController.SetActive(true);
-            // player.GetComponent<PlayerController>().enabled = true;
-            // cameraScene.SetActive(false);
             ChangeSceneController.current.LoadScene();
         } //necessario per non far avvertire lo stacco di animazione durante il cambio scena
         else if (Vector3.Distance(cameraScene.transform.position, cameraPlayer.transform.position) < 10F)

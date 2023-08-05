@@ -16,6 +16,8 @@ namespace AdaGame
         public readonly int limitSteps = 25;
         public readonly int minSteps = 16;
 
+        private bool gameOver = false;
+
         private void Awake()
         {
             if (current == null)
@@ -57,23 +59,30 @@ namespace AdaGame
                 UIManagerController.current.currentTime -= Time.deltaTime;
         
             // tempo scaduto o limite steps raggiunto
-            if ( (UIManagerController.current.currentTime <= 0 && !startGame) 
-                 || UIManagerController.current.steps == limitSteps)
+            if ( (UIManagerController.current.currentTime <= 0 && !startGame && !gameOver) 
+                 || (UIManagerController.current.steps == limitSteps && !gameOver))
             {
+                gameOver = true;
+                
+                AudioManager.current.StopMusicAdaGame();
+                AudioManager.current.PlayGameOverSound();
+                
                 sphere.GetComponent<Rigidbody>().velocity = Vector3.zero;
                 sphere.GetComponent<MoveSphereController>().enabled = false;
 
                 if(!UIManagerController.current.gameOverPanel.activeSelf)
                     UIManagerController.current.gameOverPanel.SetActive(true);
-            
+
                 Time.timeScale = 0;
             }
         }
-        
+
         // fa partire il gioco
         public void StartGame()
         {
             Time.timeScale = 1;
+            
+            AudioManager.current.PlayButtonSound();
         
             if(UIManagerController.current.startPanel.activeSelf) 
                 UIManagerController.current.startPanel.SetActive(false);
@@ -85,6 +94,8 @@ namespace AdaGame
         public void RestartGame()
         {
             PlayerPrefs.Save();
+            AudioManager.current.PlayButtonSound();
+            AudioManager.current.PlayMusicAdaGame();
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
         
@@ -157,6 +168,9 @@ namespace AdaGame
         
         public void GameOverNextFallSphere()
         {
+            AudioManager.current.StopMusicAdaGame();
+            AudioManager.current.PlayGameOverSound();
+            
             sphere.GetComponent<MoveSphereController>().enabled = false;
 
             if(!UIManagerController.current.gameOverPanel.activeSelf)

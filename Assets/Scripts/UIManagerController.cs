@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 
 public class UIManagerController : MonoBehaviour
 {
@@ -21,7 +22,7 @@ public class UIManagerController : MonoBehaviour
     [Header("The control info panel in game menu")]
     [SerializeField]
     private GameObject controlInfoPanel;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -81,6 +82,7 @@ public class UIManagerController : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name == "Menu")
         {
+            AudioManager.current.PlayButtonSound();
             PlayerPrefs.DeleteAll();
             SceneManager.LoadScene("Menu");
         }
@@ -90,6 +92,7 @@ public class UIManagerController : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name == "Menu")
         {
+            AudioManager.current.PlayButtonSound();
             if (!controlInfoPanel.activeSelf)   
                 controlInfoPanel.SetActive(true);
         }
@@ -99,6 +102,7 @@ public class UIManagerController : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name == "Menu")
         {
+            AudioManager.current.PlayButtonSound();
             if (controlInfoPanel.activeSelf)   
                 controlInfoPanel.SetActive(false);
         }

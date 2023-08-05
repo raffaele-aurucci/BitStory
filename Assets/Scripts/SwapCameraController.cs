@@ -21,6 +21,8 @@ public class SwapCameraController : MonoBehaviour
 
     public void OnClickStartGame()
     {
+        AudioManager.current.PlayStartGameSound();
+        
         // disattivo il panel dove è presente il button
         startPanel.SetActive(false);
 

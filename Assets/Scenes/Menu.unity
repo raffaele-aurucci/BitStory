@@ -2711,6 +2711,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 836375807}
   m_CullTransparentMesh: 1
+--- !u!1 &935794462
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 935794465}
+  - component: {fileID: 935794464}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &935794464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935794462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74d55754ff133dd43854aa3ba512172e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClipMusic: {fileID: 8300000, guid: fc55319749c1027499d6505f4326ecdb, type: 3}
+  audioClipPressButton: {fileID: 8300000, guid: c23bf2e79e654034daac4f8ea0c85246, type: 3}
+  audioClipStartButton: {fileID: 8300000, guid: f3432406e264c9742b0693d44aa1604b, type: 3}
+--- !u!4 &935794465
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935794462}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -27.290154, y: 47.541306, z: 59.302628}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 26
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &960350258
 GameObject:
   m_ObjectHideFlags: 0
@@ -3578,6 +3625,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1032290946}
   - component: {fileID: 1032290945}
+  - component: {fileID: 1032290947}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3643,6 +3691,14 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 30.456, y: -46.821, z: 0.001}
+--- !u!81 &1032290947
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032290943}
+  m_Enabled: 1
 --- !u!1 &1037287902
 GameObject:
   m_ObjectHideFlags: 0
@@ -4878,7 +4934,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textPoints: {fileID: 1817715153}
   textNotes: {fileID: 972885972}
-  textTasks: {fileID: 556726539}
   textMedals: {fileID: 626253344}
   controlInfoPanel: {fileID: 251374430}
 --- !u!1 &1357128120

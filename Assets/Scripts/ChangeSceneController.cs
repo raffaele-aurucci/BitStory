@@ -49,6 +49,7 @@ public class ChangeSceneController : MonoBehaviour
             if (tagCharacter == "Ada")
             {
                 PlayerPrefs.Save();
+                AudioManager.current.PauseMusic();
                 SceneManager.LoadScene("AdaGame");
             }
         }
@@ -60,6 +61,7 @@ public class ChangeSceneController : MonoBehaviour
         {
             PlayerPrefs.Save();
             Time.timeScale = 1;
+            AudioManager.current.ResumeMusic();
             SceneManager.LoadScene("World");
         }
     }

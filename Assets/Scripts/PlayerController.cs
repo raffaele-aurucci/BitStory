@@ -20,7 +20,8 @@ public class PlayerController : MonoBehaviour
     
     [SerializeField]
     private Transform pivot;
-
+    
+    
     // Update is called once per frame
     void Update()
     {
@@ -30,6 +31,8 @@ public class PlayerController : MonoBehaviour
         // Restituisce l'intensità dell'input sull'asse verticale (-1 a 1) (W e S - freccia su e giu)
         vertical = Input.GetAxis("Vertical");
         
+        AudioManager.current.PlayStepSound();
+
         // Setto i valori float a vertical e a horizontal per applicare l'animazione, uso dampTime per avere un
         // cambio di animazione meno brusco e più fluido
         animator.SetFloat("horizontal", horizontal, 0.07F, Time.deltaTime);

@@ -2743,6 +2743,8 @@ MonoBehaviour:
   audioClipMusic: {fileID: 8300000, guid: fc55319749c1027499d6505f4326ecdb, type: 3}
   audioClipPressButton: {fileID: 8300000, guid: c23bf2e79e654034daac4f8ea0c85246, type: 3}
   audioClipStartButton: {fileID: 8300000, guid: f3432406e264c9742b0693d44aa1604b, type: 3}
+  audioClipNotes: {fileID: 8300000, guid: be51cba1a243f634bb2b668109032126, type: 3}
+  audioClipStep: {fileID: 8300000, guid: 92cb1a3d28e54934aba9cfbaea50f51b, type: 3}
 --- !u!4 &935794465
 Transform:
   m_ObjectHideFlags: 0

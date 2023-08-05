@@ -40,6 +40,8 @@ public class DialogueController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
+                AudioManager.current.PlayButtonSound();
+                
                 if (textDialogue.text == lines[index])
                 {
                     // necessario per non far scomparire il dialogPanel all'utlima battuta di dialogo, in modo da far apparire

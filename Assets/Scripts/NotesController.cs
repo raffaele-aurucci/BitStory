@@ -180,6 +180,7 @@ public class NotesController : MonoBehaviour
         if (linesNote != null && linesNote.Length > 0)
         {
             notesPanel.SetActive(true);
+            AudioManager.current.PlayNotesSound();
             textNameNote.text = nameNote;
             textNote.text = linesNote;
         }

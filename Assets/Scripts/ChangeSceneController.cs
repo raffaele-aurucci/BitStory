@@ -49,6 +49,7 @@ public class ChangeSceneController : MonoBehaviour
             if (tagCharacter == "Ada")
             {
                 PlayerPrefs.Save();
+                AudioManager.current.PlayButtonSound();
                 AudioManager.current.PauseMusic();
                 SceneManager.LoadScene("AdaGame");
             }

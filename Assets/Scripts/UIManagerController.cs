@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 
@@ -106,5 +107,13 @@ public class UIManagerController : MonoBehaviour
             if (controlInfoPanel.activeSelf)   
                 controlInfoPanel.SetActive(false);
         }
+    }
+
+    public void NoButtonDialog()
+    {
+        // Forza l'uscita del cursore dal bottone
+        AudioManager.current.PlayButtonSound();
+        StartDialogueController.current.EnablePlayerMovementAndDisablePanel();
+        EventSystem.current.SetSelectedGameObject(null);
     }
 }

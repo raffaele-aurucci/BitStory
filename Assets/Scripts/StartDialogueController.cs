@@ -140,6 +140,7 @@ public class StartDialogueController : MonoBehaviour
         if (linesCharacter != null && linesCharacter.Length > 0)
         {
             dialoguePanel.SetActive(true);
+            AudioManager.current.PlayButtonSound();
             DialogueController.current.lines = linesCharacter;
             DialogueController.current.tagCharacter = character.tag;
             textName.text = textNameCharacter;

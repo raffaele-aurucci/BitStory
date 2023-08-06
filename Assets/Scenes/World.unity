@@ -5341,7 +5341,7 @@ PrefabInstance:
       objectReference: {fileID: 1848247146}
     - target: {fileID: 4799349616985521546, guid: bb9b113cf9a6a17489983d854fcd0c71, type: 3}
       propertyPath: playerSpeed
-      value: 0.7
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 4799349616985521547, guid: bb9b113cf9a6a17489983d854fcd0c71, type: 3}
       propertyPath: m_RootOrder
@@ -5399,6 +5399,10 @@ PrefabInstance:
     - target: {fileID: 5195476565231626482, guid: 70c26425c56cca34dad61bb0e0d8e492, type: 3}
       propertyPath: m_Name
       value: Ada
+      objectReference: {fileID: 0}
+    - target: {fileID: 5195476565231626483, guid: 70c26425c56cca34dad61bb0e0d8e492, type: 3}
+      propertyPath: m_Constraints
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 5195476565231626493, guid: 70c26425c56cca34dad61bb0e0d8e492, type: 3}
       propertyPath: m_RootOrder

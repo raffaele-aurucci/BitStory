@@ -10,6 +10,8 @@ namespace AdaGame
         
         private void OnTriggerEnter(Collider other)
         {
+            AudioManager.current.PlayBonusSound();
+            
             GameObject particleInstantiate = Instantiate(particle, transform.parent.position, particle.transform.rotation);
             particleInstantiate.SetActive(true);
             

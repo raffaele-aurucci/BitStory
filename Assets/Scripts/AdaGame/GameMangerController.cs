@@ -94,15 +94,20 @@ namespace AdaGame
         public void RestartGame()
         {
             PlayerPrefs.Save();
+            AudioManager.current.StopGameOverSound();
+            AudioManager.current.StopWinGameSound();
             AudioManager.current.PlayButtonSound();
             AudioManager.current.PlayMusicAdaGame();
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
         
-        public void FinishGame() // da completare con i bit ottenuti
+        public void FinishGame() 
         {
             if (UIManagerController.current.steps < limitSteps)
             {
+                AudioManager.current.StopMusicAdaGame();
+                AudioManager.current.PlayWinGameSound();
+                
                 sphere.GetComponent<Rigidbody>().velocity = Vector3.zero;
                 sphere.GetComponent<MoveSphereController>().enabled = false;    
                 

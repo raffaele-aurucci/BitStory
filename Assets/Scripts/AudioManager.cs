@@ -5,7 +5,7 @@ using UnityEngine.Serialization;
 
 public class AudioManager : MonoBehaviour
 {
-    public static AudioManager current { get; set; }
+    public static AudioManager current { get; private set; }
     
     private AudioSource audioSourceMainMusic;
     private AudioSource audioSourceButton;
@@ -14,8 +14,10 @@ public class AudioManager : MonoBehaviour
     private AudioSource audioSourceStep;
     private AudioSource audioSourceAdaGameMusic;
     private AudioSource audioSourceGameOver;
+    private AudioSource audioSourceWinGame;
+    private AudioSource audioSourceBonus;
     
-    [FormerlySerializedAs("audioClipMusic")] [SerializeField]
+    [SerializeField]
     private AudioClip audioClipMainMusic;
     [SerializeField]
     private AudioClip audioClipPressButton;
@@ -29,6 +31,10 @@ public class AudioManager : MonoBehaviour
     private AudioClip audioClipAdaGameMusic;
     [SerializeField] 
     private AudioClip audioClipGameOver;
+    [SerializeField] 
+    private AudioClip audioClipWinGame;
+    [SerializeField] 
+    private AudioClip audioClipBonus;
     
     private void Awake()
     {
@@ -49,6 +55,8 @@ public class AudioManager : MonoBehaviour
 
             audioSourceAdaGameMusic = gameObject.AddComponent<AudioSource>();
             audioSourceGameOver = gameObject.AddComponent<AudioSource>();
+            audioSourceWinGame = gameObject.AddComponent<AudioSource>();
+            audioSourceBonus = gameObject.AddComponent<AudioSource>();
 
             if (SceneManager.GetActiveScene().name == "Menu")
             {
@@ -137,8 +145,34 @@ public class AudioManager : MonoBehaviour
     public void PlayGameOverSound()
     {
         audioSourceGameOver.clip = audioClipGameOver;
-        audioSourceGameOver.volume = 0.3F;
+        audioSourceGameOver.volume = 0.5F;
         audioSourceGameOver.Play();
+    }
+
+    public void StopGameOverSound()
+    {
+        if (audioSourceGameOver.clip != null)
+            audioSourceGameOver.Stop();
+    }
+
+    public void PlayWinGameSound()
+    {
+        audioSourceWinGame.clip = audioClipWinGame;
+        audioSourceWinGame.volume = 0.5F;
+        audioSourceWinGame.Play();
+    }
+
+    public void StopWinGameSound()
+    {
+        if (audioSourceWinGame.clip != null)
+            audioSourceWinGame.Stop();
+    }
+
+    public void PlayBonusSound()
+    {
+        audioSourceBonus.clip = audioClipBonus;
+        audioSourceBonus.volume = 0.2F;
+        audioSourceBonus.PlayDelayed(0.3F);
     }
 
 }

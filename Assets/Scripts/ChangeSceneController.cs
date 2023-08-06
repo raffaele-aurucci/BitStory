@@ -64,6 +64,8 @@ public class ChangeSceneController : MonoBehaviour
             PlayerPrefs.Save();
             Time.timeScale = 1;
             AudioManager.current.PlayButtonSound();
+            AudioManager.current.StopGameOverSound();
+            AudioManager.current.StopWinGameSound();
             AudioManager.current.StopMusicAdaGame();
             AudioManager.current.ResumeMainMusic();
             SceneManager.LoadScene("World");

@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/HorstGame.unity
+    guid: 94ef584fa489f164a9ce0dd0f6bfa1b0
+  - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 6da8b7a82b3c0584884863d5dcdaa27c
   - enabled: 1
@@ -14,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AdaGame.unity
     guid: 92a86e2d844dca341bb22239b84a6ec3
+  - enabled: 1
+    path: Assets/Scenes/ClaudeGame.unity
+    guid: ef3aa4b42ef682f46afc538b9f10d711
   m_configObjects: {}

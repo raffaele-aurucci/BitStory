@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/TimGame.unity
+    guid: 49cf030a761e4c8438204e188a917c97
+  - enabled: 1
     path: Assets/Scenes/HorstGame.unity
     guid: 94ef584fa489f164a9ce0dd0f6bfa1b0
   - enabled: 1

@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/AlanGame.unity
+    guid: 88f769902c254134f8b0497fc2831961
+  - enabled: 1
     path: Assets/Scenes/DennisGame.unity
     guid: 913b0e67912aceb45bb5c024681659b5
   - enabled: 1

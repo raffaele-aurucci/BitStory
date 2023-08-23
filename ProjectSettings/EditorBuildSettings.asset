@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/GeorgeGame.unity
+    guid: fa759ada2c70e574084d6dffe4c43f97
+  - enabled: 1
     path: Assets/Scenes/JohnGame.unity
     guid: 49d8a5b60ba803146a8d34f60766b050
   - enabled: 1

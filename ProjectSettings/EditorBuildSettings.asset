@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/GeorgeGame.unity
-    guid: fa759ada2c70e574084d6dffe4c43f97
-  - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 6da8b7a82b3c0584884863d5dcdaa27c
   - enabled: 1
@@ -20,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HorstGame.unity
     guid: 94ef584fa489f164a9ce0dd0f6bfa1b0
+  - enabled: 1
+    path: Assets/Scenes/GeorgeGame.unity
+    guid: fa759ada2c70e574084d6dffe4c43f97
   - enabled: 1
     path: Assets/Scenes/DennisGame.unity
     guid: 913b0e67912aceb45bb5c024681659b5

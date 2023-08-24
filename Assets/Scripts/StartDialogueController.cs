@@ -72,6 +72,7 @@ public class StartDialogueController : MonoBehaviour
         if (isInRange && Input.GetKeyDown(KeyCode.E) && !isKeyPressed)
         {
             isKeyPressed = true;
+            AudioManager.current.StopStepSound();   // ferma l'esecuzione del suono dei passi
             StartDialogueWithCharacter();
         }
         

@@ -4132,10 +4132,10 @@ MonoBehaviour:
     per fargli fare cose che io gli dico!
   - 'Durante i miei studi ho lavorato alla macchina analitica di Charles Babbage:
     il primo prototipo di computer meccanico.'
-  - Ho realizzato un algoritmo per generare i numeri di Bernoulli; le istruzioni
-    magiche di cui ti parlavo prima ;)
-  - "Un algoritmo \xE8 una sequenza di istruzioni eseguite da un computer. In pratica
-    se gli dai un input valido lui ti restituisce un risultato!"
+  - 'Ho realizzato un algoritmo per generare i numeri di Bernoulli: le istruzioni
+    magiche di cui ti parlavo prima ;)'
+  - "Un algoritmo \xE8 una sequenza di istruzioni eseguite da un computer. Fornendogli
+    dei dati in ingresso ti restituir\xE0 un risultato!"
   - Magico vero?
   - In questo mondo puoi divertirti insieme a me e a tanti altri personaggi illustri
     della storia dell'informatica!
@@ -4143,16 +4143,14 @@ MonoBehaviour:
     come se fosse un viaggio educativo nel passato!
   - "Adesso ti proporr\xF2 una sfida interessante. Se riesci a superarla ottimamente
     ti conferir\xF2 una fantastica medaglia!"
-  - La sfida consiste nel trovare il percorso minimo per arrivare da un punto A 
-    a un punto B.
-  - "Attento per\xF2 perch\xE8 il numero di passi che hai a disposizione sono limitati
-    e avrai anche un limite di tempo stabilito."
+  - "La sfida consiste nel trovare il percorso minimo (pi\xF9 breve) per arrivare
+    da un punto A  a un punto B."
   - "Questa sfida \xE8 anche nota come \"la ricerca della path (percorso) di cammino
     minimo in un grafo\"."
-  - "Un grafo sostanzialmente \xE8 un insieme di nodi collegati tra loro con degli
+  - "Un grafo altro non \xE8 che un insieme di nodi collegati tra loro con degli
     archi."
-  - "A seconda di come sono collegati possono assumere nomi diversi. Adesso per\xF2
-    concentrati sulla sfida."
+  - "La sequenza di azioni che farai per completare questo compito sar\xE0 il tuo
+    algoritmo. Adesso per\xF2 concentrati sulla sfida."
   - 'Allora che dici, iniziamo? '
   linesHorst:
   - "Ehil\xE0, mi chiamo Horst Feistel e sono un crittografo, molto lieto di conoscerti!
@@ -4169,26 +4167,20 @@ MonoBehaviour:
     realizzato due algoritmi per nascondere i messaggi."
   - "Il primo algoritmo prende il nome da me ed \xE8 detto cifrario di Feistel, l'altro
     \xE8 chiamato DES, acronimo di Data Encription Standard."
-  - Questi algoritmi vengono anche detti "algoritmi di cifratura a chiave simmetrica".
-  - Supponi di voler mandare un messaggio segreto ad una tua amica di nome Alice,
-    utilizzando uno dei due algoritmi.
-  - "L'algoritmo che andrai ad usare divider\xE0 il messaggio cos\xEC com'\xE8 in
-    piccoli blocchi di parole di una certa lunghezza. "
-  - "Dopodich\xE8 prender\xE0 in input una chiave segreta, che solo tu e la persona
-    a cui vuoi mandare il messaggio devi conoscere."
-  - "Applicher\xE0 una serie di modifiche al blocco mediante alcune istruzioni e
-    utilizzando la chiave segreta."
-  - "Infine otterrai un blocco incomprensibile rispetto all'originale. L'unione di
-    tutti i blocchi sar\xE0 il messaggio segreto."
-  - "Quando avrai mandato il messaggio ad Alice, lei dovr\xE0 utilizzare il tuo stesso
-    algoritmo ma dovr\xE0 invertire l'ordine della chiave."
-  - Spero di averti chiarito quanto sia importante la sicurezza informatica e di
-    non averti troppo confuso ;)
+  - "Ora per\xF2 voglio sottoporti a una sfida da veri crittografi! Superandola capirai
+    quanto sia importante la sicurezza informatica."
+  - La sfida consiste nel decifrare un messaggio, che a prima vista non ha significato,
+    ma se segui le regole otterrai un vero messaggio.
+  - "Ogni lettera dell'alfabeto \xE8 stata sostituita da un'altra, spostandola in
+    avanti o indietro di alcune posizioni rispetto all'originale."
+  - "Questa tecnica \xE8 anche conosciuta con il nome di \"Cifrario di Cesare\" poich\xE8
+    veniva usati in tempi antichi per nascondere i messaggi."
+  - Allora che ne pensi, iniziamo?
   linesDennis:
   - Hey, ciao! Io sono Dennis Ritchie e sono noto come uno dei pionieri dell'informatica
     moderna! Piacere di conoscerti!
-  - Durante i miei studi ho inventato linguaggio C e insieme al mio collega Ken Thompson,
-    ho scritto il sistema operativo Unix.
+  - Durante i miei studi ho inventato il linguaggio C e insieme al mio collega Ken
+    Thompson, ho scritto il sistema operativo Unix.
   - "Il C \xE8 un linguaggio di programmazione con il quale puoi scrivere istruzioni
     e manipolare dati per far fare ci\xF2 che vuoi al tuo computer."
   - Questo insieme di istruzioni viene detto "programma" e nel caso del C, esso necessita
@@ -4197,25 +4189,21 @@ MonoBehaviour:
     linguaggio comprensibile per il computer.
   - Infatti, se non lo sai, i computer ragionano in binario, ovvero 0 e 1. Il singolo
     valore 0 o 1 viene detto "bit".
-  - "Il C \xE8 anche chiamato \"linguaggio a basso livello\" poich\xE8 \xE8 a stretto
-    contatto con l'hardware del computer."
-  - Mediante il C puoi dire al tuo computer come memorizzare i dati in memoria, in
-    particolare la memoria RAM.
-  - "La memoria RAM \xE8 una memoria temporanea, poich\xE8 quando spegni il computer
-    ci\xF2 che hai scritto viene perso."
-  - "Ed \xE8 per questo che quando scriviamo dei programmi in C li memorizziamo nella
-    memoria di massa, come gli hard disk."
-  - Con il C puoi anche creare dei processi, ovvero altri programmi in esecuzione
-    sul tuo computer e tante altre cose belle ;)
-  - "Unix invece, come abbiamo gi\xE0 detto \xE8 un sistema operativo."
-  - I sistemi operativi sono il cuore di ogni computer, senza di essi non ci sarebbe
-    modo di usare l'hardware.
-  - I sistemi operativi dicono al computer come gestire la memoria, i processi, i
-    file, l'interfaccia che vedi a schermo, ecc ...
-  - "Unix \xE8 stato scritto principalmente in C, ci\xF2 ha permesso di portare il
-    sistema su computer anche molto diversi tra loro!"
-  - "Spero che con questa chiacchierata ti abbia un p\xF2 incuriosito in merito a
-    questo magico mondo!"
+  - Mentre se consideri di mettere insieme 8 bit, questi formano "1 byte"! Ti suona
+    familiare?
+  - I sistemi operativi invece, sono il cuore di ogni computer, senza di essi non
+    ci sarebbe modo di usare l'hardware.
+  - I sistemi operativi dicono al computer come gestire la memoria, i file, il mouse,
+    la tastiera, eccetera.
+  - "Ora ti proporr\xF2 una sfida in cui dovrai inserire dei blocchi all'interno
+    di uno \"stack\", questa sar\xE0 la memoria del mio computer."
+  - Lo stack puoi immaginarlo come il lavello da cucina, mentre i blocchi come i
+    piatti da lavare.
+  - I piatti vengono messi nello stack (lavello) dall'alto verso il basso quando
+    sono sporchi e vengono rimossi dall'alto quando sono lavati.
+  - "Se hai capito questa analogia non avrai difficolt\xE0, dovrai aggiungere il
+    minor numero di blocchi allo stack seguendo l'obiettivo."
+  - Allora che dici, iniziamo?
   linesAlan:
   - Ehi, ciao! Io sono Alan Turing, felice di conoscerti! Sono un matematico, conosciuto
     come uno dei padri dell'informatica.
@@ -4251,9 +4239,9 @@ MonoBehaviour:
   notesPanel: {fileID: 407239143}
   textNameNote: {fileID: 1004999529}
   textNote: {fileID: 1862372422}
-  linesAlgorithm: "Un algoritmo \xE8 una sequenza di istruzioni eseguite da un computer.
-    In pratica se gli viene fornito un input valido lui restituir\xE0 un risultato
-    sulla base di quest'ultimo!"
+  linesAlgorithm: "Un algoritmo \xE8 una sequenza di istruzioni eseguite da un computer
+    per risolvere specifici problemi. In pratica, se gli vengono forniti dei dati
+    validi in ingresso, esso restituir\xE0 un risultato!"
   linesSoftware: "Il software \xE8 ci\xF2 che realizzano gli informatici, ovvero
     un'insieme di istruzioni realizzate al fine di far eseguire specifiche attivit\xE0
     al computer!"

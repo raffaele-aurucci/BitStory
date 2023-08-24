@@ -294,7 +294,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 127.3, y: 0}
+  m_AnchoredPosition: {x: 248, y: 0}
   m_SizeDelta: {x: -677.2354, y: -112.3858}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &29264889
@@ -4126,32 +4126,31 @@ MonoBehaviour:
   textName: {fileID: 988770365}
   buttonPanel: {fileID: 29264887}
   linesAda:
-  - "Ciao, sono Ada Lovelace, nota anche come la prima programmatrice della storia
-    dell'informatica. \xC8 un piacere conoscerti!"
-  - Puoi immaginarmi come una "maga del computer", in cui uso numeri e istruzioni
-    per fargli fare cose che io gli dico!
+  - "Ciao, sono Ada Lovelace, conosciuta anche come la prima programmatrice della
+    storia dell'informatica. \xC8 un piacere conoscerti!"
+  - "Immaginami come una \"maga del computer\", utilizzo numeri e istruzioni per
+    fargli fare tutto ci\xF2 che desidero."
   - 'Durante i miei studi ho lavorato alla macchina analitica di Charles Babbage:
     il primo prototipo di computer meccanico.'
-  - 'Ho realizzato un algoritmo per generare i numeri di Bernoulli: le istruzioni
-    magiche di cui ti parlavo prima ;)'
-  - "Un algoritmo \xE8 una sequenza di istruzioni eseguite da un computer. Fornendogli
-    dei dati in ingresso ti restituir\xE0 un risultato!"
+  - 'Con essa ho realizzato un algoritmo per generare i numeri di Bernoulli: le istruzioni
+    magiche di cui ti parlavo prima.'
+  - "Un algoritmo \xE8 una sequenza di istruzioni eseguite da un computer per risolvere
+    problemi o compiti specifici."
   - Magico vero?
-  - In questo mondo puoi divertirti insieme a me e a tanti altri personaggi illustri
+  - In questo mondo, potrai divertirti insieme a me e a tanti altri personaggi illustri
     della storia dell'informatica!
-  - Potrai imparare e scoprire tante cose che forse ancora non sai... consideralo
-    come se fosse un viaggio educativo nel passato!
-  - "Adesso ti proporr\xF2 una sfida interessante. Se riesci a superarla ottimamente
-    ti conferir\xF2 una fantastica medaglia!"
-  - "La sfida consiste nel trovare il percorso minimo (pi\xF9 breve) per arrivare
-    da un punto A  a un punto B."
-  - "Questa sfida \xE8 anche nota come \"la ricerca della path (percorso) di cammino
-    minimo in un grafo\"."
-  - "Un grafo altro non \xE8 che un insieme di nodi collegati tra loro con degli
-    archi."
-  - "La sequenza di azioni che farai per completare questo compito sar\xE0 il tuo
-    algoritmo. Adesso per\xF2 concentrati sulla sfida."
-  - 'Allora che dici, iniziamo? '
+  - "Avrai l'opportunit\xE0 di imparare e scoprire tante cose che forse ancora non
+    conosci... consideralo un viaggio educativo nel passato!"
+  - "Ora ti lancer\xF2 una sfida interessante. Se la superi egregiamente, riceverai
+    una fantastica medaglia!"
+  - "La sfida consiste nel trovare il percorso pi\xF9 breve da un punto A a un punto
+    B."
+  - "Questa sfida \xE8 nota come \"la ricerca della path di cammino minimo in un
+    grafo\"."
+  - "Un grafo \xE8 un insieme di nodi collegati tra loro da archi."
+  - Le azioni che compirai per completare questa sfida saranno il tuo algoritmo.
+    Ma ora focalizzati sulla sfida.
+  - Allora che ne dici? Cominciamo?
   linesHorst:
   - "Ehil\xE0, mi chiamo Horst Feistel e sono un crittografo, molto lieto di conoscerti!
     Come? Non sai cosa sia un crittografo?"

@@ -2746,9 +2746,9 @@ MonoBehaviour:
   audioClipNotes: {fileID: 8300000, guid: be51cba1a243f634bb2b668109032126, type: 3}
   audioClipStep: {fileID: 8300000, guid: 92cb1a3d28e54934aba9cfbaea50f51b, type: 3}
   audioClipAdaGameMusic: {fileID: 8300000, guid: 129ce9127bcb1694d9958e044e9a3beb, type: 3}
-  audioClipGameOver: {fileID: 8300000, guid: ec015acc528c9e747a5152011a1bdcd2, type: 3}
+  audioClipGameOver: {fileID: 8300000, guid: c879f90a6cf053e478dd553b3e25710d, type: 3}
   audioClipWinGame: {fileID: 8300000, guid: f70af9372ff08f84d88f735cb471c742, type: 3}
-  audioClipBonus: {fileID: 8300000, guid: cce8767d63d33f540abacedad4d75a78, type: 3}
+  audioClipBonus: {fileID: 8300000, guid: f3bef5508c694a04da39f9cf86e8ea8b, type: 3}
 --- !u!4 &935794465
 Transform:
   m_ObjectHideFlags: 0

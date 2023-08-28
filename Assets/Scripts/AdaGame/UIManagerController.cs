@@ -72,16 +72,14 @@ namespace AdaGame
             if (current == null)
                 current = this;
         }
-
-        // Start is called before the first frame update
+        
         void Start()
         {
             currentTime = 60F;
             steps = 0;
             bitsBonus = 0;
         }
-
-        // Update is called once per frame
+        
         void Update()
         {
             timeText.text = "Time: " + (int)currentTime;

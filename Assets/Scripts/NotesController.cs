@@ -1,6 +1,4 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -58,8 +56,7 @@ public class NotesController : MonoBehaviour
     private string linesIA;
     
     #endregion
-
-    // Update is called once per frame
+    
     void Update()
     {
         // Controlla se il giocatore è nell'area di interazione e preme il tasto C

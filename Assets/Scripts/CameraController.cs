@@ -1,10 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class CameraController : MonoBehaviour
 {
+    #region fields
+    
     private RaycastHit raycastHit;
     
     // Cambiando questo valore è possibile specificare una rotazione iniziale del personaggio lungo l'asse Y
@@ -30,8 +29,8 @@ public class CameraController : MonoBehaviour
     [SerializeField]
     private Transform cameraNormalPos;
     
-
-    // Update is called once per frame
+    #endregion
+    
     void Update()
     {
         // Restituisce l'intensità dell'input del mouse sull'asse X.
@@ -63,7 +62,7 @@ public class CameraController : MonoBehaviour
     {
         Debug.DrawLine(pivotPos.transform.position, cameraPos.transform.position, Color.red);
         
-        // Linecast verifica se c'è una collisione lungo la linea che interccore tra il pivot e la camera
+        // Linecast verifica se c'è una collisione lungo la linea che interccore tra il pivot e la camera,
         // la collissione si verifica quando c'è un oggetto a cui è associato un collider lungo la linea
         if (Physics.Linecast(pivotPos.transform.position, cameraPos.transform.position, out raycastHit))
         {

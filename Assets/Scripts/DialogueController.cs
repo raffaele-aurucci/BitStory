@@ -44,7 +44,7 @@ public class DialogueController : MonoBehaviour
                 
                 if (textDialogue.text == lines[index])
                 {
-                    // necessario per non far scomparire il dialogPanel all'utlima battuta di dialogo, in modo da far apparire
+                    // necessario per non far scomparire il dialogPanel all'ultima battuta di dialogo, in modo da far apparire
                     // il pannello per scegliere se iniziare o meno il minigioco (al momento solo per Ada)
                     if (!(tagCharacter == "Ada" && index == lines.Length - 1))
                         NextLine();

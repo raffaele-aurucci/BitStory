@@ -1,24 +1,23 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class SwapCameraController : MonoBehaviour
 {
+    #region fields
+    
     [SerializeField]
     private GameObject cameraScene;
+    
     [SerializeField]
     private GameObject cameraPlayer;
     
     [SerializeField]
     private GameObject startPanel;
-    
-    [SerializeField]
-    private GameObject cameraController;
 
     [SerializeField]
     private GameObject player;
-
+    
+    #endregion
+    
     public void OnClickStartGame()
     {
         AudioManager.current.PlayStartGameSound();

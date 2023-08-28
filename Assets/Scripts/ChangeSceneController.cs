@@ -1,29 +1,28 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ChangeSceneController : MonoBehaviour
 {
+    #region fields
+    
     public static ChangeSceneController current { get; private set; }
 
     public string tagCharacter { get; set; }
 
+    #endregion
+    
     private void Awake()
     {
         if (current == null)
             current = this;
     }
-
-    // Start is called before the first frame update
+    
     void Start()
     {
-        // funzione per il caricamento delle note raccolte/non raccolte all'interno di World
+        // metodo per il caricamento delle note raccolte/non raccolte all'interno di World
         LoadNotesInWorld();
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         Quit();
@@ -31,7 +30,6 @@ public class ChangeSceneController : MonoBehaviour
 
     void Quit()
     {
-        // da aggingere la scena menu
         if (SceneManager.GetActiveScene().name == "World")
         {
             if (Input.GetKeyDown(KeyCode.Escape))

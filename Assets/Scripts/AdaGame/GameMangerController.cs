@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -6,6 +5,8 @@ namespace AdaGame
 {
     public class GameMangerController : MonoBehaviour
     {
+        #region fields
+        
         public static GameMangerController current { get; set; }
         
         private bool startGame = true;
@@ -18,13 +19,14 @@ namespace AdaGame
 
         private bool gameOver = false;
 
+        #endregion
+        
         private void Awake()
         {
             if (current == null)
                 current = this;
         }
-
-        // Start is called before the first frame update
+        
         void Start()
         {
 

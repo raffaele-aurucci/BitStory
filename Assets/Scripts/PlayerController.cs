@@ -1,10 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class PlayerController : MonoBehaviour
 {
+    #region fields
+    
     [SerializeField] 
     private CharacterController controller;
     [SerializeField] 
@@ -21,8 +20,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private Transform pivot;
     
+    #endregion
     
-    // Update is called once per frame
     void Update()
     {
         // Restituisce l'intensità dell'input sull'asse orizzontale (-1 a 1) (A e D, freccia su e freccia giu)

@@ -4,13 +4,16 @@ namespace AdaGame
 {
     public class MoveSphereController : MonoBehaviour
     {
+        #region fields
+        
         [SerializeField]
         [Header("The speed associated at movement of sphere")]
         private float speed;
 
         private Rigidbody rb;
 
-        // Start is called before the first frame update
+        #endregion
+        
         void Start()
         {
             rb = this.gameObject.GetComponent<Rigidbody>();    

@@ -1,13 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
-using UnityEngine.Serialization;
 
 public class UIManagerController : MonoBehaviour
 {
+    #region fields
+    
     [Header("The text that sign the bits (points)")]
     [SerializeField] 
     private TextMeshProUGUI textPoints;
@@ -24,7 +23,8 @@ public class UIManagerController : MonoBehaviour
     [SerializeField]
     private GameObject controlInfoPanel;
 
-    // Start is called before the first frame update
+    #endregion
+    
     void Start()
     {
         if (!PlayerPrefs.HasKey("medalsWorld"))
@@ -36,8 +36,7 @@ public class UIManagerController : MonoBehaviour
         if (!PlayerPrefs.HasKey("notes"))
             PlayerPrefs.SetInt("notes", 0);
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         CountProgressElement();

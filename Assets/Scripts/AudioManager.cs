@@ -1,10 +1,9 @@
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.Serialization;
 
 public class AudioManager : MonoBehaviour
 {
+    #region fields
     public static AudioManager current { get; private set; }
 
     private AudioSource audioSourceMainMusic;
@@ -27,6 +26,8 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioClip audioClipWinGame;
     [SerializeField] private AudioClip audioClipBonus;
 
+    #endregion
+    
     private void Awake()
     {
         if (current == null)

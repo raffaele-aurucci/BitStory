@@ -44,7 +44,7 @@ The *number icons* are made by [riajulislam](https://www.flaticon.com/authors/ri
 The *down arrow icon* is made by [mattbadal](https://www.flaticon.com/authors/mattbadal) from [Flaticon](www.flaticon.com).  
 The *next icon* is made by [Taufik Ramadhan](https://www.flaticon.com/authors/taufik-ramadhan) from [Flaticon](www.flaticon.com).  
 The *check icon* is made by [Octopocto](https://www.flaticon.com/authors/octopocto) from [Flaticon](www.flaticon.com).  
-The *cross icon* is made by [Those Icons](https://www.flaticon.com/authors/those-icons) from [Flaticon](www.flaticon.com).  
+The *cross icon* and *cursor icon* are made by [Those Icons](https://www.flaticon.com/authors/those-icons) from [Flaticon](www.flaticon.com).  
 The *textures of room* have been downloaded from [Pinterest](https://pinterest.com/).  
 The *palette of characters* have been downloaded from [Imphenzia's Dropbox](https://tinyurl.com/imphenziapalette).  
 The *musics and sounds* have been downloaded from [Freesound](https://freesound.org/).  

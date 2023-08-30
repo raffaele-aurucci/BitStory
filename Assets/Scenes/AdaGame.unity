@@ -9876,6 +9876,7 @@ MonoBehaviour:
   linesWinWithMedalObtained: "COMPLIMENTI! HAI RAGGIUNTO IL TRAGUARDO IN TEMPO SENZA
     DIFFICOLT\xC0. HAI TROVATO LA SOLUZIONE OTTIMA, TUTTAVIA HAI GI\xC0 OTTENUTO
     LA MEDAGLIA!"
+  cursor: {fileID: 2800000, guid: 87ad11fe6d12ad6448bad32d54ad76be, type: 3}
 --- !u!114 &5257238412526794
 MonoBehaviour:
   m_ObjectHideFlags: 0

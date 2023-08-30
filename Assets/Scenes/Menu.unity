@@ -4897,7 +4897,6 @@ MonoBehaviour:
   cameraScene: {fileID: 1032290943}
   cameraPlayer: {fileID: 52760592}
   startPanel: {fileID: 1258156026}
-  cameraController: {fileID: 1947192875}
   player: {fileID: 1848247144}
 --- !u!4 &1349177199
 Transform:
@@ -4942,6 +4941,7 @@ MonoBehaviour:
   textNotes: {fileID: 972885972}
   textMedals: {fileID: 626253344}
   controlInfoPanel: {fileID: 251374430}
+  cursor: {fileID: 2800000, guid: 87ad11fe6d12ad6448bad32d54ad76be, type: 3}
 --- !u!1 &1357128120
 GameObject:
   m_ObjectHideFlags: 0

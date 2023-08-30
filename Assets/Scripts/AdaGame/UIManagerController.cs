@@ -65,6 +65,9 @@ namespace AdaGame
         
         public static UIManagerController current { get; private set; }
 
+        [SerializeField] 
+        private Texture2D cursor;
+        
         #endregion
     
         private void Awake()
@@ -75,6 +78,8 @@ namespace AdaGame
         
         void Start()
         {
+            Cursor.SetCursor(cursor, Vector2.zero, CursorMode.ForceSoftware);
+            
             currentTime = 60F;
             steps = 0;
             bitsBonus = 0;

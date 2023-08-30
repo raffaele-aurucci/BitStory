@@ -23,10 +23,15 @@ public class UIManagerController : MonoBehaviour
     [SerializeField]
     private GameObject controlInfoPanel;
 
+    [SerializeField] 
+    private Texture2D cursor;
+
     #endregion
     
     void Start()
     {
+        Cursor.SetCursor(cursor, Vector2.zero, CursorMode.ForceSoftware);
+        
         if (!PlayerPrefs.HasKey("medalsWorld"))
             PlayerPrefs.SetInt("medalsWorld", 0);
         

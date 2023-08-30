@@ -56,7 +56,11 @@ public class DialogueController : MonoBehaviour
                 }
             } // attiva il buttonPanel per Ada
             else if (index == lines.Length - 1 && textDialogue.text == lines[index] && tagCharacter == "Ada")
+            {
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
                 buttonPanel.SetActive(true);
+            }
         }
         
     }

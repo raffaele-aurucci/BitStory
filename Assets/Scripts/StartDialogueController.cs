@@ -162,6 +162,9 @@ public class StartDialogueController : MonoBehaviour
         
         if (buttonPanel.activeSelf)
             buttonPanel.SetActive(false);
+        
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
 
         isKeyPressed = false;
     }

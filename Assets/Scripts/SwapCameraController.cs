@@ -24,6 +24,9 @@ public class SwapCameraController : MonoBehaviour
         
         // disattivo il panel dove è presente il button
         startPanel.SetActive(false);
+        
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
 
         // invoco ripetutamente la funzione SwapCamera() 
         InvokeRepeating("SwapCamera", 0.2F, 0.005F*Time.deltaTime);

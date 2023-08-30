@@ -29,7 +29,9 @@ namespace AdaGame
         
         void Start()
         {
-
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            
             if (!PlayerPrefs.HasKey("medal"))
                 PlayerPrefs.SetInt("medal", 0);
             
@@ -90,6 +92,9 @@ namespace AdaGame
                 UIManagerController.current.startPanel.SetActive(false);
 
             startGame = false;
+            
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
         
         // fa ripartire il gioco
@@ -101,6 +106,9 @@ namespace AdaGame
             AudioManager.current.PlayButtonSound();
             AudioManager.current.PlayMusicAdaGame();
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
         
         public void FinishGame() 
@@ -170,6 +178,9 @@ namespace AdaGame
                     PlayerPrefs.SetInt("points", PlayerPrefs.GetInt("points") + bits);
 
                 Time.timeScale = 0;  
+                
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
             }
         }
         
@@ -184,6 +195,9 @@ namespace AdaGame
                 UIManagerController.current.gameOverPanel.SetActive(true);
         
             Time.timeScale = 0;        
+            
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
     }
 }

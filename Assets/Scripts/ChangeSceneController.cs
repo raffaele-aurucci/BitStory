@@ -35,6 +35,8 @@ public class ChangeSceneController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Escape))
             {
                 PlayerPrefs.Save();
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
                 SceneManager.LoadScene("Menu");
             }
         }
@@ -66,6 +68,8 @@ public class ChangeSceneController : MonoBehaviour
             AudioManager.current.StopWinGameSound();
             AudioManager.current.StopMusicAdaGame();
             AudioManager.current.ResumeMainMusic();
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
             SceneManager.LoadScene("World");
         }
     }

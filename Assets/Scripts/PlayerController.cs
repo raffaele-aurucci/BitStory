@@ -22,6 +22,12 @@ public class PlayerController : MonoBehaviour
     
     #endregion
     
+    void Start() 
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+        
     void Update()
     {
         // Restituisce l'intensità dell'input sull'asse orizzontale (-1 a 1) (A e D, freccia su e freccia giu)

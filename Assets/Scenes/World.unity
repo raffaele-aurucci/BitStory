@@ -4164,8 +4164,8 @@ MonoBehaviour:
     di credito dei tuoi genitori o parenti ... giusto?
   - "Ho lavorato per l'IBM, la pi\xF9 antica azienda del settore informatico e ho
     realizzato due algoritmi per nascondere i messaggi."
-  - "Il primo algoritmo prende il nome da me ed \xE8 detto cifrario di Feistel, l'altro
-    \xE8 chiamato DES, acronimo di Data Encription Standard."
+  - "Il primo algoritmo \xE8 conosciuto con il nome di \"Lucifer\", l'altro \xE8
+    chiamato \"DES\", acronimo di Data Encription Standard."
   - "Ora per\xF2 voglio sottoporti a una sfida da veri crittografi! Superandola capirai
     quanto sia importante la sicurezza informatica."
   - La sfida consiste nel decifrare un messaggio, che a prima vista non ha significato,
@@ -4174,10 +4174,10 @@ MonoBehaviour:
     avanti o indietro di alcune posizioni rispetto all'originale."
   - "Questa tecnica \xE8 anche conosciuta con il nome di \"Cifrario di Cesare\" poich\xE8
     veniva usati in tempi antichi per nascondere i messaggi."
-  - Allora che ne pensi, iniziamo?
+  - Allora che ne dici? Cominciamo?
   linesDennis:
-  - Hey, ciao! Io sono Dennis Ritchie e sono noto come uno dei pionieri dell'informatica
-    moderna! Piacere di conoscerti!
+  - Hey, ciao! Io sono Dennis Ritchie e sono uno dei pionieri dell'informatica moderna!
+    Piacere di conoscerti!
   - Durante i miei studi ho inventato il linguaggio C e insieme al mio collega Ken
     Thompson, ho scritto il sistema operativo Unix.
   - "Il C \xE8 un linguaggio di programmazione con il quale puoi scrivere istruzioni
@@ -4196,13 +4196,13 @@ MonoBehaviour:
     la tastiera, eccetera.
   - "Ora ti proporr\xF2 una sfida in cui dovrai inserire dei blocchi all'interno
     di uno \"stack\", questa sar\xE0 la memoria del mio computer."
-  - Lo stack puoi immaginarlo come il lavello da cucina, mentre i blocchi come i
+  - Lo stack puoi immaginarlo come un lavello da cucina, mentre i blocchi come i
     piatti da lavare.
   - I piatti vengono messi nello stack (lavello) dall'alto verso il basso quando
     sono sporchi e vengono rimossi dall'alto quando sono lavati.
   - "Se hai capito questa analogia non avrai difficolt\xE0, dovrai aggiungere il
     minor numero di blocchi allo stack seguendo l'obiettivo."
-  - Allora che dici, iniziamo?
+  - Allora che ne dici? Cominciamo?
   linesAlan:
   - Ehi, ciao! Io sono Alan Turing, felice di conoscerti! Sono un matematico, conosciuto
     come uno dei padri dell'informatica.
@@ -4259,9 +4259,9 @@ MonoBehaviour:
   linesDos: "Il DOS, acronimo di Disk Operating System \xE8 una famiglia di sistemi
     operativi a riga di comando, ovvero senza interfaccia grafica, sviluppato tra
     gli anni '80 e '90. Il p\xF9 diffuso fu MS-DOS, seguito da PC-DOS."
-  linesBit: "Il bit \xE8 \xE8 l'unit\xE0 di base dell'informazione in informatica
-    e rappresenta un valore binario, che pu\xF2 essere 0 o 1. I bit vengono utilizzati
-    per rappresentare dati, istruzioni e immagini nei computer."
+  linesBit: "Il bit in informatica \xE8 l'unit\xE0 di base dell'informazione e rappresenta
+    un valore binario, che pu\xF2 essere 0 o 1. I bit vengono utilizzati per rappresentare
+    dati, istruzioni e immagini nei computer."
   linesQwerty: La sigla QWERTY indica un layout (schema) di tastiera molto utilizzato
     nelle tastiere per computer o macchine da scrivere e prende il nome dalle prime
     sei lettere della fila superiore della tastiera!

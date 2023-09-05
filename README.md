@@ -49,5 +49,5 @@ The *textures of room* have been downloaded from [Pinterest](https://pinterest.c
 The *palette of characters* have been downloaded from [Imphenzia's Dropbox](https://tinyurl.com/imphenziapalette).  
 The *musics and sounds* have been downloaded from [Freesound](https://freesound.org/).  
 The *animation of characters* have been dowloaded from [Mixamo](https://www.mixamo.com/#/).  
-The *maze of HorsGame scene* has been generated with [Maze Generator](https://assetstore.unity.com/packages/tools/modeling/maze-generator-38689) from [Unity Asset Store](https://assetstore.unity.com/).  
+The *maze of HorstGame scene* has been generated with [Maze Generator](https://assetstore.unity.com/packages/tools/modeling/maze-generator-38689) from [Unity Asset Store](https://assetstore.unity.com/).  
 The *font* is made by [IdreesInc](https://github.com/IdreesInc) from this [repository](https://github.com/IdreesInc/Minecraft-Font).

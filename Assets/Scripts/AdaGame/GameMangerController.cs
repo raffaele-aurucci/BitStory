@@ -68,6 +68,9 @@ namespace AdaGame
             {
                 gameOver = true;
                 
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+                
                 AudioManager.current.StopMusicAdaGame();
                 AudioManager.current.PlayGameOverSound();
                 

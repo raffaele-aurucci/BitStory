@@ -45,6 +45,7 @@ public class UIManagerController : MonoBehaviour
     void Update()
     {
         CountProgressElement();
+        QuitGame();
     }
 
     void CountProgressElement()
@@ -119,5 +120,13 @@ public class UIManagerController : MonoBehaviour
         AudioManager.current.PlayButtonSound();
         StartDialogueController.current.EnablePlayerMovementAndDisablePanel();
         EventSystem.current.SetSelectedGameObject(null);
+    }
+
+    void QuitGame()
+    {
+        if (SceneManager.GetActiveScene().name == "Menu" && Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();    
+        }
     }
 }

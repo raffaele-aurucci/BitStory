@@ -35,6 +35,10 @@ For changing the animations of characters use the *[name-character]@T-pose.fbx* 
 ```Unity3D``` for editing game.  
 ```C#``` for scripting.  
 
+## How to run
+Install ```Demo.zip``` file, next extract all in a new folder and run ```BitStory``` application. Have fun!  
+⚠️ *The demo work fine only on screen with 16:9 ractio aspect!*
+
 ## Credits
 The *medal icons* and some *fruit icons* are made by [Freepik](https://www.flaticon.com/authors/freepik ) from [Flaticon](www.flaticon.com).  
 The *chess-board icon* and some *fruit icons* are made by [Smashicons](https://www.flaticon.com/authors/smashicons) from [Flaticon](www.flaticon.com).  

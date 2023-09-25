@@ -1,5 +1,5 @@
 # BitStory
-**BitStory is a serious game for education in computer science designed for primary school children.** 🏫
+**BitStory is a Serious Game for education in computer science designed for primary school children.** 🏫
 
 *This game is still under development and there may be some changes in the future.* 🔄
 
@@ -37,7 +37,7 @@ For changing the animations of characters use the *[name-character]@T-pose.fbx* 
 
 ## How to run
 Install ```Demo.zip``` file, next extract all in a new folder and run ```BitStory``` application. Have fun!  
-⚠️*The demo work fine only on screens with 16:9 ractio aspect!* 
+⚠️*The demo works fine only on screens with 16:9 ractio aspect!* 
 
 ## Credits
 The *medal icons* and some *fruit icons* are made by [Freepik](https://www.flaticon.com/authors/freepik ) from [Flaticon](www.flaticon.com).  
